@@ -12,13 +12,13 @@ export default function HotCoffeePage() {
           <h2 className="text-2xl font-semibold mb-2 text-coffee-dark">Caffè Americano</h2>
           <p className="text-coffee-dark/80 mb-2">Rich, full-bodied espresso with hot water for a light layer of crema.</p>
           <span className="block text-starbucks-green font-bold mb-2">₹3.25</span>
-          <AddToCartButton slug="caffe-americano" title="Caffè Americano" price="₹3.25" />
+          <AddToCartButton slug="caffe-americano" title="Caffè Americano" price="₹3.25" image="/images/caffe-americano.jpg" />
         </div>
         <div className="bg-white rounded-xl shadow p-8 mb-8">
           <h2 className="text-2xl font-semibold mb-2 text-coffee-dark">Caffè Latte</h2>
           <p className="text-coffee-dark/80 mb-2">Espresso with steamed milk and a light layer of foam.</p>
           <span className="block text-starbucks-green font-bold mb-2">₹3.95</span>
-          <AddToCartButton slug="caffe-latte" title="Caffè Latte" price="₹3.95" />
+          <AddToCartButton slug="caffe-latte" title="Caffè Latte" price="₹3.95" image="/images/caffe-latte.jpg" />
         </div>
         {/* Add more drinks as needed */}
       </div>
