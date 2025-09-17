@@ -105,21 +105,21 @@ import AddToCartButton from "./AddToCartButton";
 
 // Product details for price/title lookup
 const productDetails: Record<string, { title: string; price: string }> = {
-  "hot-coffee": { title: "Hot Coffee", price: "₹3.25" },
-  "cold-coffee": { title: "Cold Coffee", price: "₹3.45" },
-  "hot-tea": { title: "Hot Tea", price: "₹2.95" },
-  "cold-tea": { title: "Cold Tea", price: "₹3.15" },
-  "refreshers": { title: "Refreshers", price: "₹3.75" },
-  "frappuccino": { title: "Frappuccino®", price: "₹4.25" },
-  "hot-chocolate": { title: "Hot Chocolate", price: "₹2.95" },
-  "bottled-beverages": { title: "Bottled Beverages", price: "₹2.50" },
-  "egg-pesto-mozzarella-sandwich": { title: "Egg, Pesto & Mozzarella Sandwich", price: "₹4.95" },
-  "bacon-gouda-egg-sandwich": { title: "Bacon, Gouda & Egg Sandwich", price: "₹4.75" },
-  "double-smoked-bacon-cheddar-egg-sandwich": { title: "Double-Smoked Bacon, Cheddar & Egg Sandwich", price: "₹5.25" },
-  "sausage-cheddar-egg-sandwich": { title: "Sausage, Cheddar & Egg Sandwich", price: "₹4.45" },
-  "turkey-bacon-cheddar-egg-sandwich": { title: "Turkey Bacon, Cheddar & Egg Sandwich", price: "₹4.65" },
-  "impossible-breakfast-sandwich": { title: "Impossible™ Breakfast Sandwich", price: "₹5.45" },
-  "avocado-spread": { title: "Avocado Spread", price: "₹1.25" }
+  "hot-coffee": { title: "Hot Coffee", price: "₹399" },
+  "cold-coffee": { title: "Cold Coffee", price: "₹499" },
+  "hot-tea": { title: "Hot Tea", price: "₹499" },
+  "cold-tea": { title: "Cold Tea", price: "₹399" },
+  "refreshers": { title: "Refreshers", price: "₹399" },
+  "frappuccino": { title: "Frappuccino®", price: "₹499" },
+  "hot-chocolate": { title: "Hot Chocolate", price: "₹399" },
+  "bottled-beverages": { title: "Bottled Beverages", price: "₹250" },
+  "egg-pesto-mozzarella-sandwich": { title: "Egg, Pesto & Mozzarella Sandwich", price: "₹499" },
+  "bacon-gouda-egg-sandwich": { title: "Bacon, Gouda & Egg Sandwich", price: "₹599" },
+  "double-smoked-bacon-cheddar-egg-sandwich": { title: "Double-Smoked Bacon, Cheddar & Egg Sandwich", price: "₹525" },
+  "sausage-cheddar-egg-sandwich": { title: "Sausage, Cheddar & Egg Sandwich", price: "₹450" },
+  "turkey-bacon-cheddar-egg-sandwich": { title: "Turkey Bacon, Cheddar & Egg Sandwich", price: "₹699" },
+  "impossible-breakfast-sandwich": { title: "Impossible™ Breakfast Sandwich", price: "₹599" },
+  "avocado-spread": { title: "Avocado Spread", price: "₹299" }
 };
 export default function MenuSection() {
   const [selectedSection, setSelectedSection] = useState<'drinks' | 'breakfast'>('drinks');
