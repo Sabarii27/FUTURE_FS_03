@@ -169,7 +169,7 @@ export default function MenuSection() {
                         <span className="text-xl font-semibold text-cream text-center whitespace-pre-line">{item.name}</span>
                       </a>
                       <span className="text-lg text-starbucks-green font-bold mt-2">{details.price}</span>
-                      <AddToCartButton slug={item.slug} title={details.title} price={details.price} />
+                      <AddToCartButton slug={item.slug} title={details.title} price={details.price} image={item.image} />
                     </div>
                   );
                 })}
@@ -197,7 +197,7 @@ export default function MenuSection() {
                         <span className="text-xl font-semibold text-cream text-center whitespace-pre-line">{item.name}</span>
                       </a>
                       <span className="text-lg text-starbucks-green font-bold mt-2">{details.price}</span>
-                      <AddToCartButton slug={item.slug} title={details.title} price={details.price} />
+                      <AddToCartButton slug={item.slug} title={details.title} price={details.price} image={item.image} />
                     </div>
                   );
                 })}

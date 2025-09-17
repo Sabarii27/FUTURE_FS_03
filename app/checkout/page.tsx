@@ -15,23 +15,6 @@ export default function CheckoutPage() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => { setMounted(true); }, []);
   const subtotal = items.reduce((sum, item) => sum + (parseFloat(item.price.replace(/[$₹]/g, "")) * item.quantity), 0);
-  const imageMap: Record<string, string> = {
-    "hot-coffee": "/menu/hot-coffee.jpg",
-    "cold-coffee": "/menu/cold-coffee.jpg",
-    "hot-tea": "/menu/hot-tea.jpg",
-    "cold-tea": "/menu/cold-tea.jpg",
-    "refreshers": "/menu/refreshers.jpg",
-    "frappuccino": "/menu/frappuccino.jpg",
-    "hot-chocolate": "/menu/hot-chocolate.jpg",
-    "bottled-beverages": "/menu/bottled.jpg",
-    "egg-pesto-mozzarella-sandwich": "/menu/egg-pesto.jpg",
-    "bacon-gouda-egg-sandwich": "/menu/bacon-gouda.jpg",
-    "double-smoked-bacon-cheddar-egg-sandwich": "/menu/double-bacon.jpg",
-    "sausage-cheddar-egg-sandwich": "/menu/sausage-cheddar.jpg",
-    "turkey-bacon-cheddar-egg-sandwich": "/menu/turkey-bacon.jpg",
-    "impossible-breakfast-sandwich": "/menu/impossible.jpg",
-    "avocado-spread": "/menu/avocado.jpg"
-  };
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -130,7 +113,7 @@ export default function CheckoutPage() {
                   items.map((item) => (
                     <li key={item.slug} className="flex items-center gap-3 py-3">
                       <div className="w-12 h-12 rounded-full bg-coffee-medium flex items-center justify-center overflow-hidden">
-                        <img src={imageMap[item.slug] || "/menu/hot-coffee.jpg"} alt={item.title} className="object-cover w-full h-full" />
+                        <img src={item.image || "/menu/hot-coffee.webp"} alt={item.title} className="object-cover w-full h-full" />
                       </div>
                       <div className="flex-1">
                         <div className="font-semibold text-base">{item.title}</div>

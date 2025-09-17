@@ -11,7 +11,8 @@ const products = [
     price: '₹1,699',
     rating: 4.8,
     category: 'Classic',
-    color: 'from-amber-600 to-orange-600'
+    color: 'from-amber-600 to-orange-600',
+    image: '/menu/pike-place-roast.jpeg'
   },
   {
     name: 'Blonde Espresso',
@@ -19,7 +20,8 @@ const products = [
     price: '₹1,289',
     rating: 4.9,
     category: 'Light Roast',
-    color: 'from-yellow-500 to-amber-500'
+    color: 'from-yellow-500 to-amber-500',
+    image: '/menu/blonde-espresso.jpeg'
   },
   {
     name: 'Dark Roast',
@@ -27,7 +29,8 @@ const products = [
     price: '₹3,110',
     rating: 4.7,
     category: 'Dark Roast',
-    color: 'from-gray-800 to-coffee-darker'
+    color: 'from-gray-800 to-coffee-darker',
+    image: '/menu/dark-roast.jpeg'
   },
   {
     name: 'Cold Brew',
@@ -35,7 +38,8 @@ const products = [
     price: '₹599',
     rating: 4.8,
     category: 'Cold Coffee',
-    color: 'from-blue-600 to-indigo-700'
+    color: 'from-blue-600 to-indigo-700',
+    image: '/menu/cold-brew.jpeg'
   },
   {
     name: 'Frappuccino',
@@ -43,7 +47,8 @@ const products = [
     price: '₹500',
     rating: 4.6,
     category: 'Blended',
-    color: 'from-green-500 to-emerald-600'
+    color: 'from-green-500 to-emerald-600',
+    image: '/menu/frappuccino.webp'
   },
   {
     name: 'Seasonal Special',
@@ -51,7 +56,8 @@ const products = [
     price: '₹1,200',
     rating: 4.9,
     category: 'Limited Edition',
-    color: 'from-purple-600 to-pink-600'
+    color: 'from-purple-600 to-pink-600',
+    image: '/menu/seasonal-special.jpeg'
   }
 ];
 
@@ -171,6 +177,7 @@ export default function ProductShowcase() {
                   slug={products[activeProduct].name.replace(/\s+/g, '-').toLowerCase()}
                   title={products[activeProduct].name}
                   price={products[activeProduct].price}
+                  image={products[activeProduct].image}
                 />
                 <button className="border-2 border-cream text-cream hover:bg-cream hover:text-coffee-dark px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
                   <a

@@ -8,9 +8,10 @@ type AddToCartButtonProps = {
   slug: string;
   title: string;
   price: string;
+  image: string;
 };
 
-export default function AddToCartButton({ slug, title, price }: AddToCartButtonProps) {
+export default function AddToCartButton({ slug, title, price, image }: AddToCartButtonProps) {
   const router = useRouter();
   const { addToCart, cartLoaded } = useCart();
   const [adding, setAdding] = useState(false);
@@ -18,7 +19,7 @@ export default function AddToCartButton({ slug, title, price }: AddToCartButtonP
   const handleAdd = async () => {
     if (!cartLoaded || adding) return;
     setAdding(true);
-    addToCart({ slug, title, price, quantity: 1 });
+    addToCart({ slug, title, price, quantity: 1, image });
     // Wait longer to ensure state is persisted
     await new Promise((resolve) => setTimeout(resolve, 400));
     setAdding(false);

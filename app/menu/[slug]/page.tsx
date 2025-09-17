@@ -1,3 +1,20 @@
+const imageMap: Record<string, string> = {
+  "hot-coffee": "/menu/hot-coffee.webp",
+  "cold-coffee": "/menu/cold-coffee.jpeg",
+  "hot-tea": "/menu/hot-tea.jpeg",
+  "cold-tea": "/menu/cold-tea.jpeg",
+  "refreshers": "/menu/refreshers.jpeg",
+  "frappuccino": "/menu/frappuccino.webp",
+  "hot-chocolate": "/menu/hot-chocolate.webp",
+  "bottled-beverages": "/menu/bottled.jpeg",
+  "egg-pesto-mozzarella-sandwich": "/menu/egg-pesto.jpeg",
+  "bacon-gouda-egg-sandwich": "/menu/bacon-gouda.jpeg",
+  "double-smoked-bacon-cheddar-egg-sandwich": "/menu/double-bacon.jpeg",
+  "sausage-cheddar-egg-sandwich": "/menu/sausage-cheddar.jpeg",
+  "turkey-bacon-cheddar-egg-sandwich": "/menu/turkey-bacon.jpeg",
+  "impossible-breakfast-sandwich": "/menu/impossible.jpeg",
+  "avocado-spread": "/menu/avocado.jpeg"
+};
 // Required for static export in Next.js app router
 export function generateStaticParams() {
   return [
@@ -116,7 +133,7 @@ export default function ProductOrderPage({ params }: { params: { slug: string } 
         <p className="text-lg text-coffee-dark/80 mb-8">{details.description}</p>
         <div className="bg-white rounded-xl shadow p-8 mb-8">
           <span className="block text-starbucks-green font-bold mb-2 text-2xl">{details.price}</span>
-          <AddToCartButton slug={params.slug} title={details.title} price={details.price} />
+          <AddToCartButton slug={params.slug} title={details.title} price={details.price} image={imageMap[params.slug] || ""} />
         </div>
       </div>
     </>
