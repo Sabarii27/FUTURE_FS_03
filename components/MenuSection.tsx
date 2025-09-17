@@ -20,44 +20,44 @@ const categories = [
 ];
 
 const menuItems = [
-  {
-    name: "Cold Coffee",
-    image: "/menu/cold-coffee.jpg",
-    slug: "cold-coffee"
-  },
+ {
+  name: "Cold Coffee",
+  image: "/menu/cold-coffee.jpeg",
+  slug: "cold-coffee"
+},
   {
     name: "Hot Coffee",
-    image: "/menu/hot-coffee.jpg",
+    image: "/menu/hot-coffee.webp",
     slug: "hot-coffee"
   },
   {
     name: "Hot Tea",
-    image: "/menu/hot-tea.jpg",
+    image: "/menu/hot-tea.jpeg",
     slug: "hot-tea"
   },
   {
     name: "Cold Tea",
-    image: "/menu/cold-tea.jpg",
+    image: "/menu/cold-tea.jpeg",
     slug: "cold-tea"
   },
   {
     name: "Refreshers",
-    image: "/menu/refreshers.jpg",
+    image: "/menu/refreshers.jpeg",
     slug: "refreshers"
   },
   {
     name: "Frappuccino®",
-    image: "/menu/frappuccino.jpg",
+    image: "/menu/frappuccino.webp",
     slug: "frappuccino"
   },
   {
     name: "Hot Chocolate",
-    image: "/menu/hot-chocolate.jpg",
+    image: "/menu/hot-chocolate.webp",
     slug: "hot-chocolate"
   },
   {
     name: "Bottled Beverages",
-    image: "/menu/bottled.jpg",
+    image: "/menu/bottled.jpeg",
     slug: "bottled-beverages"
   }
 ];
@@ -65,37 +65,37 @@ const menuItems = [
 const breakfastItems = [
   {
     name: "Egg, Pesto & Mozzarella\nSandwich",
-    image: "/menu/egg-pesto.jpg",
+    image: "/menu/egg-pesto.jpeg",
     slug: "egg-pesto-mozzarella-sandwich"
   },
   {
     name: "Bacon, Gouda & Egg\nSandwich",
-    image: "/menu/bacon-gouda.jpg",
+    image: "/menu/bacon-gouda.jpeg",
     slug: "bacon-gouda-egg-sandwich"
   },
   {
     name: "Double-Smoked Bacon,\nCheddar & Egg\nSandwich",
-    image: "/menu/double-bacon.jpg",
+    image: "/menu/double-bacon.jpeg",
     slug: "double-smoked-bacon-cheddar-egg-sandwich"
   },
   {
     name: "Sausage, Cheddar &\nEgg Sandwich",
-    image: "/menu/sausage-cheddar.jpg",
+    image: "/menu/sausage-cheddar.jpeg",
     slug: "sausage-cheddar-egg-sandwich"
   },
   {
     name: "Turkey Bacon,\nCheddar & Egg\nSandwich",
-    image: "/menu/turkey-bacon.jpg",
+    image: "/menu/turkey-bacon.jpeg",
     slug: "turkey-bacon-cheddar-egg-sandwich"
   },
   {
     name: "Impossible™\nBreakfast Sandwich",
-    image: "/menu/impossible.jpg",
+    image: "/menu/impossible.jpeg",
     slug: "impossible-breakfast-sandwich"
   },
   {
     name: "Avocado\nSpread",
-    image: "/menu/avocado.jpg",
+    image: "/menu/avocado.jpeg",
     slug: "avocado-spread"
   }
 ];

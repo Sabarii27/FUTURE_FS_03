@@ -9,10 +9,10 @@ export default function GiftCardSection() {
         {/* Featured Cards */}
         <div className="flex flex-wrap gap-6 mb-8">
           {/* Replace src with your own images */}
-          <img src="/giftcard1.png" alt="Gift Card 1" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
-          <img src="/giftcard2.png" alt="Gift Card 2" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
-          <img src="/giftcard3.png" alt="Gift Card 3" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
-          <img src="/giftcard4.png" alt="Gift Card 4" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
+          <img src="/giftcards/birthday-card.jpeg" alt="Gift Card 1" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
+          <img src="/giftcards/birthday-card2.jpeg" alt="Gift Card 2" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
+          <img src="/giftcards/birthday-card3.jpeg" alt="Gift Card 3" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
+          <img src="/giftcards/birthday-card4.jpeg" alt="Gift Card 4" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
         </div>
         {/* Info Banner */}
         <div className="flex items-center bg-[#eaf5eb] rounded-lg p-4 mb-8">
@@ -33,8 +33,8 @@ export default function GiftCardSection() {
         {/* Fall Section */}
         <h3 className="text-xs font-bold text-coffee-dark/60 mb-4 tracking-widest uppercase">Fall</h3>
         <div className="flex flex-wrap gap-6">
-          <img src="/giftcard5.png" alt="Gift Card 5" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
-          <img src="/giftcard3.png" alt="Gift Card 3" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
+          <img src="/giftcards/birthday-card5.jpeg" alt="Gift Card 5" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
+          <img src="/giftcards/birthday-card6.jpeg" alt="Gift Card 3" className="rounded-xl shadow-lg w-72 h-44 object-cover bg-white" />
         </div>
       </div>
     </section>
